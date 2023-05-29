@@ -34,10 +34,13 @@ const Nav = () => {
       </ul>
       <ul className={NavStyle.iconlinks}>
         <li>
-          <Link href="https://github.com/mARUwTC"><i className="fab fa-github"></i></Link>
+          <Link href="https://wa.me/85259432006" target="_blank"><i className="fab fa-whatsapp"></i></Link>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/in/chriswongtc"><i className="fab fa-linkedin"></i></Link>
+          <Link href="https://www.linkedin.com/in/chriswongtc" target="_blank"><i className="fab fa-linkedin"></i></Link>
+        </li>
+        <li>
+          <Link href="https://github.com/mARUwTC" target="_blank"><i className="fab fa-github"></i></Link>
         </li>
         <div className={NavStyle.buttongroup}>
           <Link href="/"><button>Résumé</button></Link>

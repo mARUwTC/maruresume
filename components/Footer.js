@@ -9,23 +9,30 @@ const Footer = () => {
     <div className={FooterStyles.footer}>
       <hr />
       <div className={FooterStyles.container}>
-        <div className="firsttext">
+        {/* <div className="firsttext">
           <h2>Call</h2>
-          <p>+21655555555</p>
+          <p>+852 59432006</p>
         </div>
         <div className="secondtext">
           <h2>Email</h2>
-          <p>contact@medhat.net</p>
+          <p>chriswong0621@gmail.com</p>
+        </div> */}
+        <div className="firsttext">
+          <h2>Contact</h2>
+          <p>Please feel free to contact me through Whatsapp/Linkedin!</p>
         </div>
       </div>
       <div className={FooterStyles.secondcontainer}>
         <p>Thanks for your time! :)</p>
         <ul>
         <li>
-          <Link href="https://github.com/mARUwTC"><i className="fab fa-github"></i></Link>
+          <Link href="https://wa.me/85259432006" target="_blank"><i className="fab fa-whatsapp"></i></Link>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/in/chriswongtc"><i className="fab fa-linkedin"></i></Link>
+          <Link href="https://www.linkedin.com/in/chriswongtc" target="_blank"><i className="fab fa-linkedin"></i></Link>
+        </li>
+        <li>
+          <Link href="https://github.com/mARUwTC" target="_blank"><i className="fab fa-github"></i></Link>
         </li>
         </ul>
       </div>

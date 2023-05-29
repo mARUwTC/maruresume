@@ -23,10 +23,10 @@ const starIcon = {
 
 function Experience() {
     const timeline = [
-        { icon: workIcon, date: '2022 - present', title: 'System Engineer', desc: 'Creative Direction, User Experience, Visual Design, Project Management, Team Leading' },
-        { icon: workIcon, date: 'DEV 2020 - JAN 2022', title: 'IT Support Officer', desc: 'Creative Direction, User Experience, Visual Design, SEO, Online Marketing' },
-        { icon: workIcon, date: 'JUN 2020 - NOV 2020', title: 'IT Officer', desc: 'User Experience, Visual Design' },
-        { icon: workIcon, date: 'SEP 2019 - MAY 2020', title: 'Enginner', desc: 'User Experience, Visual Design' },
+        { icon: workIcon, date: '2022 - present', title: 'System Engineer', desc: 'Networking, Security management, Infrastructure management' },
+        { icon: workIcon, date: 'DEV 2020 - JAN 2022', title: 'IT Support Officer', desc: 'One-man band IT Officer' },
+        { icon: workIcon, date: 'JUN 2020 - NOV 2020', title: 'IT Officer', desc: 'System management, User support' },
+        { icon: workIcon, date: 'SEP 2019 - MAY 2020', title: 'Enginner', desc: 'IT Project' },
         { icon: schoolIcon, date: 'In Progress', title: 'Computing', subtitle: 'BSc (Hons)' },
         { icon: schoolIcon, date: '2021 - 2023', title: 'Computer and Information Security', subtitle: 'Diploma' },
         { icon: starIcon }

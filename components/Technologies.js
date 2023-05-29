@@ -8,21 +8,33 @@ const Technologies = () => {
   const [tech, setTech] = useState([
     {
       id: "1",
+      tech: "fas fa-network-wired",
+      title: "Networking",
+      para: "Experience with Cisco, FortiGate,",
+    },
+    {
+      id: "2",
+      tech: "fas fa-user-secret	",
+      title: "Security",
+      para: "Experience with MDATP",
+    },
+    {
+      id: "3",
+      tech: "fas fa-server",
+      title: "Infrastructure",
+      para: "Experience with Windows, Ubuntu, Linix-like systems",
+    },
+    {
+      id: "4",
       tech: "fab fa-react",
       title: "Front-End",
       para: "Experience with  React.js",
     },
     {
-      id: "2",
+      id: "5",
       tech: "fab fa-node",
       title: "Back-End",
       para: "Experience with Node and Databases",
-    },
-    {
-      id: "3",
-      tech: "fab fa-figma",
-      title: "UI/UX",
-      para: "Experience with tools like Figma",
     },
   ]);
 
