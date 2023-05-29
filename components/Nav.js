@@ -34,10 +34,10 @@ const Nav = () => {
       </ul>
       <ul className={NavStyle.iconlinks}>
         <li>
-          <Link href="/"><i className="fab fa-github"></i></Link>
+          <Link href="https://github.com/mARUwTC"><i className="fab fa-github"></i></Link>
         </li>
         <li>
-          <Link href="/"><i className="fab fa-linkedin"></i></Link>
+          <Link href="https://www.linkedin.com/in/chriswongtc"><i className="fab fa-linkedin"></i></Link>
         </li>
         <div className={NavStyle.buttongroup}>
           <Link href="/"><button>Résumé</button></Link>

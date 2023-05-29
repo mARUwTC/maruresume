@@ -1,5 +1,7 @@
 import React from "react";
 
+import Link from "next/link";
+
 import FooterStyles from "../styles/footer.module.css";
 
 const Footer = () => {
@@ -17,17 +19,14 @@ const Footer = () => {
         </div>
       </div>
       <div className={FooterStyles.secondcontainer}>
-        <p>Innovating one project at a time</p>
+        <p>Thanks for your time! :)</p>
         <ul>
-          <li>
-            <i className="fab fa-github"></i>
-          </li>
-          <li>
-            <i className="fab fa-instagram"></i>
-          </li>
-          <li>
-            <i className="fab fa-twitter"></i>
-          </li>
+        <li>
+          <Link href="https://github.com/mARUwTC"><i className="fab fa-github"></i></Link>
+        </li>
+        <li>
+          <Link href="https://www.linkedin.com/in/chriswongtc"><i className="fab fa-linkedin"></i></Link>
+        </li>
         </ul>
       </div>
     </div>
