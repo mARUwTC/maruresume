@@ -62,6 +62,15 @@
 
   line-height: 2;
 }
+
+.cardgroup > div > ul {
+  pointer-events: none;
+  max-width: 100%;
+  width: 380px;
+  margin: 0 auto;
+  line-height: 2;
+}
+
 /* .cardgroup > h3 {
     margin-left: 7rem;
 } */

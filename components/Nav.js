@@ -31,22 +31,20 @@ const Nav = () => {
         <li>
           <Link href="/about">About</Link>
         </li>
-        <li>
-          <Link href="/contact">Touch</Link>
-        </li>
       </ul>
 
       <ul className={NavStyle.iconlinks}>
         <li>
-          <i className="fab fa-github"></i>
+          <Link href="/"><i className="fab fa-github"></i></Link>
         </li>
         <li>
-          <i className="fab fa-instagram"></i>
+          <Link href="/"><i className="fab fa-linkedin"></i></Link>
         </li>
-        <li>
-          <i className="fab fa-twitter"></i>
-        </li>
+        <div className={NavStyle.buttongroup}>
+          <Link href="/"><button>Résumé</button></Link>
+        </div>
       </ul>
+
     </nav>
   );
 };

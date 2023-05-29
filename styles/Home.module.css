@@ -25,3 +25,16 @@
   font-size: 1.1rem;
 }
 
+.more {
+  padding-top: 80px;
+  width: 5%;
+  height: 3px;
+  margin: 0 auto;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.more:hover {
+  color: #fff;
+  transform: translateY(-4px);
+}

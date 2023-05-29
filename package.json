@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "framer-motion": "^4.1.17",
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "^13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "eslint": "7.31.0",

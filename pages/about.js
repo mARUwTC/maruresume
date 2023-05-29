@@ -13,28 +13,23 @@ const About = () => {
   const [year, setYear] = useState([
     {
       id: "1",
-      numyear: "2017",
-      para: "Start my journey",
+      numyear: "2019",
+      para: "Graduated and started working",
     },
     {
       id: "2",
-      numyear: "2018",
-      para: "Worked as a freelance developer",
+      numyear: "2020",
+      para: "Worked as a project engineer",
     },
     {
       id: "3",
-      numyear: "2019",
-      para: "Founded JavaScript",
+      numyear: "2021",
+      para: "Worked as a one-man band IT officer",
     },
     {
       id: "4",
-      numyear: "2020",
-      para: "Shared my projects with the world",
-    },
-    {
-      id: "5",
-      numyear: "2021",
-      para: "Started my own platform",
+      numyear: "2022",
+      para: "Worked as an experienced system engineer",
     },
   ]);
   return (
@@ -59,9 +54,7 @@ const About = () => {
       <h1>About Me</h1>
       <div className={AboutStyles.text}>
         <p>
-          The purpose of JavaScript is to help aspiring and established
-          developers to take their development skills to the next level and
-          build awesome apps.
+          With 3 years of experience in the information technology field, I have developed expertise in system security management, networking, and system management. Additionally, I have honed my skills in IT project management and implementation.
         </p>
 
         <div className={AboutStyles.yearslist}>

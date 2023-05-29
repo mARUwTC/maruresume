@@ -1,0 +1,4 @@
+.experience > h1 {
+    margin-block: 2.5rem;
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+}
