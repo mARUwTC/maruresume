@@ -32,7 +32,6 @@ const Nav = () => {
           <Link href="/about">About</Link>
         </li>
       </ul>
-
       <ul className={NavStyle.iconlinks}>
         <li>
           <Link href="/"><i className="fab fa-github"></i></Link>
@@ -44,7 +43,6 @@ const Nav = () => {
           <Link href="/"><button>Résumé</button></Link>
         </div>
       </ul>
-
     </nav>
   );
 };
