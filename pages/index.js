@@ -11,6 +11,11 @@ import Technologies from "../components/Technologies";
 import Footer from "../components/Footer";
 import Experience from "../components/Exprience";
 
+export function ToExp() {
+  var to = document.getElementById("experience");
+  to.scrollIntoView({behavior: 'smooth'}, true);
+}
+
 export default function Home() {
   return (
     <>
@@ -45,11 +50,11 @@ export default function Home() {
           >
             Hello, I&apos;m Chris Wong, a System Engineer with three years of experience. I enjoy tackling complex problems and am dedicated to delivering high-quality work. Looking forward to collaborating with others in the industry.          </motion.p>
         </div>
-        <Link href="#experience" scroll={false}>
-          <div className={HomeStyles.more}>
-            <FontAwesomeIcon icon={faChevronDown} size={30} />
+        {/* <Link href="#experience" scroll={false}> */}
+          <div className={HomeStyles.more} onClick={ToExp}>
+            <FontAwesomeIcon icon={faChevronDown} />
           </div>
-        </Link>
+        {/* </Link> */}
         <BackgroundAnimation />
       </motion.div>
 

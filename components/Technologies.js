@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
@@ -39,8 +39,18 @@ const Technologies = () => {
     },
   ]);
 
-  const [ref, inView] = useInView({
+  const [refTitle, inViewTitle] = useInView({
     threshold: 0.5,
+    triggerOnce: true
+  });
+
+  const [refPara, inViewPara] = useInView({
+    threshold: 0.5,
+    triggerOnce: true
+  });
+
+  const [refTech, inViewTech] = useInView({
+    threshold: 0.2,
     triggerOnce: true
   });
 
@@ -57,45 +67,43 @@ const Technologies = () => {
   return (
     <div className={TechStyles.technologies} id="skills">
       <motion.h1
-        ref={ref}
+        ref={refTitle}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"}
+        animate={inViewTitle ? "visible" : "hidden"}
         variants={variants}
         transition={{ duration: 0.5 }}
       >
         Skills
       </motion.h1>
       <motion.p
-        ref={ref}
+        ref={refPara}
         initial="hidden"
-        animate={inView ? "visible" : "hidden"}
+        animate={inViewPara ? "visible" : "hidden"}
         variants={variants}
-        transition={{ delay: 0.25, duration: 0.5 }}
+        transition={{ duration: 0.5 }}
       >
         I&apos;m familiar with a range of skills in the IT industry. From Infrastructure to Development.
       </motion.p>
 
-      <div className={TechStyles.techgroup}>
+      <motion.div
+        className={TechStyles.techgroup}
+        ref={refTech}
+        initial="hidden"
+        animate={inViewTech ? "visible" : "hidden"}
+        variants={variants1}
+        transition={{ duration: 0.5 }}
+      >
         {tech.map((t) => {
           return (
-            <motion.div
-              key={tech}
-              ref={ref}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants1}
-              transition={{ delay: 0.5, duration: 0.5 }}
-            >
-              <Technologie
-                title={t.title}
-                para={t.para}
-                tech={t.tech}
-                key={t.id}
-              />
-            </motion.div>
+            <Technologie
+              title={t.title}
+              para={t.para}
+              tech={t.tech}
+              key={t.id}
+            />
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

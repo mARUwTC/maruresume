@@ -26,12 +26,12 @@
 }
 
 .more {
-  padding: 100px 0px 0px;
   width: 3%;
   height: 3px;
   margin: 0 auto;
   transition: all 0.3s ease 0s;
-  cursor: default;
+  cursor: pointer;
+  margin: 2rem auto 3rem;
 }
 
 .more:hover {
