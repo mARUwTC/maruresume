@@ -4,8 +4,6 @@ body {
   margin: 0;
 }
 
-
-
 @font-face {
   font-family: "Poppins";
   src: url("/fonts/Poppins/Poppins-Medium.ttf");
@@ -14,7 +12,6 @@ body {
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "Poppins";
   src: url("/fonts/Poppins/Poppins-ExtraLightItalic.ttf");
@@ -22,7 +19,6 @@ body {
   font-weight: 200;
   font-display: swap;
 }
-
 
 @font-face {
   font-family: "Poppins";
