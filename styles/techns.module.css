@@ -1,7 +1,8 @@
 .technologies {
   padding-top: 3.5rem;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  padding-bottom: 3.5rem;
 }
 .technologies > h1 {
   margin-block: 2.5rem;
@@ -28,7 +29,7 @@
   margin-top: 2rem;
   width: 210px;
   height: 200px;
-  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   padding-left: 1px;
 }
