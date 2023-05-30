@@ -1,5 +1,4 @@
 import BackgroundAnimation from "../components/Background";
-// import Projects from "../components/Projects";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -55,7 +54,6 @@ export default function Home() {
       </motion.div>
 
       <Experience />
-      {/* <Projects /> */}
       <Technologies />
       <Footer />
     </>
