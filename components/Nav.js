@@ -42,7 +42,7 @@ const Nav = () => {
           <Link href="https://github.com/mARUwTC/maruresume" target="_blank"><i className="fab fa-github"></i></Link>
         </li>
         <div className={NavStyle.buttongroup}>
-          <Link href="https://bit.ly/43BwJQx" target="_blank"><button>Résumé</button></Link>
+          <Link href="https://bit.ly/3WM41dy" target="_blank"><button>Résumé</button></Link>
         </div>
       </ul>
     </nav>
