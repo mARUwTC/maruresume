@@ -43,7 +43,7 @@ const Nav = () => {
           <Link href="https://github.com/mARUwTC" target="_blank"><i className="fab fa-github"></i></Link>
         </li>
         <div className={NavStyle.buttongroup}>
-          <Link href="/"><button>Résumé</button></Link>
+          <Link href="https://bit.ly/43BwJQx"><button>Résumé</button></Link>
         </div>
       </ul>
     </nav>
