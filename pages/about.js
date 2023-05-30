@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import AboutStyles from "../styles/about.module.css";
 import { motion } from "framer-motion";
 
-
 import Year from "../components/Year";
+import Footer from "../components/Footer";
 
 const About = () => {
-
-
-
-
   const [year, setYear] = useState([
     {
       id: "1",
@@ -56,7 +52,6 @@ const About = () => {
         <p>
           With 3 years of experience in the information technology field, I have developed expertise in system security management, networking, and system management. Additionally, I have honed my skills in IT project management and implementation.
         </p>
-
         <div className={AboutStyles.yearslist}>
           {year.map((y) => {
             return <Year title={y.numyear} para={y.para} key={y.id} />;
@@ -64,6 +59,7 @@ const About = () => {
         </div>
       </div>
     </motion.div>
+    <Footer />
   );
 };
 
