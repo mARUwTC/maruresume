@@ -6,7 +6,6 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
 
 import React, { useEffect } from "react";
-import { useRouter } from 'next/router';
 
 import HomeStyles from "../styles/Home.module.css";
 import Technologies from "../components/Technologies";
@@ -14,27 +13,6 @@ import Footer from "../components/Footer";
 import Experience from "../components/Exprience";
 
 export default function Home() {
-  const router = useRouter();
-  
-  const scrollToSection = (event) => {
-  event.preventDefault();
-  const element = document.getElementById("experience");
-  element.scrollIntoView({ behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-    if (url.indexOf("#") !== -1 && url.indexOf("#experience") !== -1) {
-    const element = document.getElementById("experience");
-    element.scrollIntoView({ behavior: "smooth" });
-    }
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, []);
-  
   return (
     <>
       <motion.div
@@ -76,7 +54,7 @@ export default function Home() {
         <BackgroundAnimation />
       </motion.div>
 
-      <Experience id="experience" />
+      <Experience />
       {/* <Projects /> */}
       <Technologies />
       <Footer />
