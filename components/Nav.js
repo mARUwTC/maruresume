@@ -7,21 +7,22 @@ import NavStyle from "../styles/nav.module.css";
 const Nav = () => {
   return (
     <nav className={NavStyle.nav}>
-      <motion.h1 drag>
-        <motion.span
-          animate={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          transition={{
-            delay: 0.25,
-            duration: 0.5,
-            type: "spring",
-            stiffness: 150,
-          }}
-        >
-          P
-        </motion.span>
-        ortfolio
-      </motion.h1>
+      <Link href="/">
+        <motion.h1 drag>
+          <motion.span
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              delay: 0.25,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 150,
+            }}
+          >
+            Portfolio
+          </motion.span>
+        </motion.h1>
+      </Link>
       <ul>
         <li>
           <Link href="/">Home</Link>
