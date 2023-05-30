@@ -32,7 +32,7 @@ const Footer = () => {
           <Link href="https://www.linkedin.com/in/chriswongtc" target="_blank"><i className="fab fa-linkedin"></i></Link>
         </li>
         <li>
-          <Link href="https://github.com/mARUwTC" target="_blank"><i className="fab fa-github"></i></Link>
+          <Link href="https://github.com/mARUwTC/maruresume" target="_blank"><i className="fab fa-github"></i></Link>
         </li>
         </ul>
       </div>
