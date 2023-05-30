@@ -1,10 +1,8 @@
 import React from "react";
-
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import NavStyle from "../styles/nav.module.css";
-
-import { motion } from "framer-motion";
 
 const Nav = () => {
   return (

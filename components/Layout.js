@@ -1,10 +1,8 @@
-import LayoutStyle from "../styles/layout.module.css";
-
 import React, { useState, useEffect } from "react";
 
 import Nav from "../components/Nav";
-
 import Head from "next/head";
+import LayoutStyle from "../styles/layout.module.css";
 
 const Layout = ({ children }) => {
   const [showScroll, setShowScroll] = useState(false);
