@@ -9,15 +9,15 @@ import ExpStyles from "../styles/experience.module.css";
 
 const workIcon = {
     icon: <FontAwesomeIcon icon={faBriefcase} />,
-    iconStyle: { background: 'hsl(219, 41%, 20%)', color: '#fff' }
+    iconStyle: { background: 'rgb(30, 45, 72)', color: '#fff' }
 };
 const schoolIcon = {
     icon: <FontAwesomeIcon icon={faSchool} />,
-    iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' }
+    iconStyle: { background: 'rgb(87, 20, 43)', color: '#fff' }
 };
 const starIcon = {
     icon: <FontAwesomeIcon icon={faStar} />,
-    iconStyle: { background: 'rgb(16, 204, 82)', color: '#fff' }
+    iconStyle: { background: 'rgb(35, 122, 86)', color: '#fff' }
 };
 
 function Experience() {
@@ -37,8 +37,8 @@ function Experience() {
             <VerticalTimeline>
                 {timeline.map((t, i) => {
                     const timelineLength = timeline.length;
-                    const contentStyle = i === 0 ? { background: 'hsl(219, 41%, 20%)', color: '#fff' } : ( i === (timelineLength - 1) ? undefined : { background: '#666', color: '#fff' });
-                    const arrowStyle = i === 0 ? { borderRight: '7px solid  hsl(219, 41%, 20%)' } : undefined;
+                    const contentStyle = i === 0 ? { background: 'rgb(30, 45, 72)', color: '#fff' } : ( i === (timelineLength - 3) ? { background: 'rgb(87, 20, 43)', color: '#fff' } : ( i === (timelineLength - 1) ? undefined : { background: '#666', color: '#fff' }));
+                    const arrowStyle = i === 0 ? { borderRight: '7px solid  rgb(30, 45, 72)' } : undefined;
 
                     return <VerticalTimelineElement
                         key={i}
