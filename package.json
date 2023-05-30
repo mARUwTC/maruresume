@@ -1,6 +1,6 @@
 {
-  "name": "helloapp",
-  "version": "0.1.0",
+  "name": "resume",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,14 +12,14 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^10.12.16",
     "next": "^13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
-    "eslint": "7.31.0",
-    "eslint-config-next": "11.0.1"
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4"
   }
 }
