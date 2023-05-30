@@ -29,37 +29,39 @@ const About = () => {
     },
   ]);
   return (
-    <motion.div
-      animate={{ x: 0, opacity: 1 }}
-      initial={{ x: "100vw", opacity: 0 }}
-      transition={{
-        delay: 0.15,
-        duration: 0.5,
-        type: "spring",
-        stiffness: 130,
-      }}
-      exit="exit"
-      variants={{
-        exit: {
-          x: "-100vw",
-          transition: { ease: "easeInOut" },
-        },
-      }}
-      className={AboutStyles.about}
-    >
-      <h1>About Me</h1>
-      <div className={AboutStyles.text}>
-        <p>
-          With 3 years of experience in the information technology field, I have developed expertise in system security management, networking, and system management. Additionally, I have honed my skills in IT project management and implementation.
-        </p>
-        <div className={AboutStyles.yearslist}>
-          {year.map((y) => {
-            return <Year title={y.numyear} para={y.para} key={y.id} />;
-          })}
+    <>
+      <motion.div
+        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: "100vw", opacity: 0 }}
+        transition={{
+          delay: 0.15,
+          duration: 0.5,
+          type: "spring",
+          stiffness: 130,
+        }}
+        exit="exit"
+        variants={{
+          exit: {
+            x: "-100vw",
+            transition: { ease: "easeInOut" },
+          },
+        }}
+        className={AboutStyles.about}
+      >
+        <h1>About Me</h1>
+        <div className={AboutStyles.text}>
+          <p>
+            With 3 years of experience in the information technology field, I have developed expertise in system security management, networking, and system management. Additionally, I have honed my skills in IT project management and implementation.
+          </p>
+          <div className={AboutStyles.yearslist}>
+            {year.map((y) => {
+              return <Year title={y.numyear} para={y.para} key={y.id} />;
+            })}
+          </div>
         </div>
-      </div>
-    </motion.div>
-    <Footer />
+      </motion.div>
+      <Footer />
+    </>
   );
 };
 
