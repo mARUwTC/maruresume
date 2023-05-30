@@ -11,13 +11,13 @@ const Technologies = () => {
       id: "1",
       tech: "fas fa-network-wired",
       title: "Networking",
-      para: "Experience with Cisco, FortiGate,",
+      para: "Experience with Cisco, Jupiter, Sonicwall",
     },
     {
       id: "2",
       tech: "fas fa-user-secret	",
       title: "Security",
-      para: "Experience with MDATP",
+      para: "Experience with FortiGate, MDATP",
     },
     {
       id: "3",
