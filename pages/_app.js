@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 function MyApp({ Component, pageProps, router }) {
   return (
     <Layout>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode='wait'>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </Layout>

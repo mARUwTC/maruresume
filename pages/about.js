@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import Year from "../components/Year";
 import Footer from "../components/Footer";
+import BackgroundAnimation3 from "../components/Background3";
 
 const About = () => {
   const [year, setYear] = useState([
@@ -65,6 +66,7 @@ const About = () => {
           </div>
         </div>
       </motion.div>
+      <BackgroundAnimation3 />
       <Footer />
     </>
   );

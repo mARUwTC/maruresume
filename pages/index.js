@@ -2,7 +2,6 @@ import BackgroundAnimation from "../components/Background";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import Link from "next/link";
 
 import React, { useEffect } from "react";
 
@@ -13,7 +12,7 @@ import Experience from "../components/Exprience";
 
 export function ToExp() {
   var to = document.getElementById("experience");
-  to.scrollIntoView({behavior: 'smooth'}, true);
+  to.scrollIntoView({ behavior: 'smooth' }, true);
 }
 
 export default function Home() {
@@ -50,11 +49,9 @@ export default function Home() {
           >
             Hello, I&apos;m Chris Wong, a System Engineer with three years of experience. I enjoy tackling complex problems and am dedicated to delivering high-quality work. Looking forward to collaborating with others in the industry.          </motion.p>
         </div>
-        {/* <Link href="#experience" scroll={false}> */}
-          <div className={HomeStyles.more} onClick={ToExp}>
-            <FontAwesomeIcon icon={faChevronDown} />
-          </div>
-        {/* </Link> */}
+        <div className={HomeStyles.more} onClick={ToExp}>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </div>
         <BackgroundAnimation />
       </motion.div>
 
