@@ -4,7 +4,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import React from "react";
 
-import HomeStyles from "../styles/Home.module.css";
+import HomeStyles from "../styles/home.module.css";
 import Technologies from "../components/Technologies";
 import Footer from "../components/Footer";
 import Experience from "../components/Exprience";
