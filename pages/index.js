@@ -1,14 +1,14 @@
-import BackgroundAnimation from "../components/BGindex";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-import React, { useEffect } from "react";
+import React from "react";
 
 import HomeStyles from "../styles/Home.module.css";
 import Technologies from "../components/Technologies";
 import Footer from "../components/Footer";
 import Experience from "../components/Exprience";
+import BackgroundAnimation from "../components/BGindex";
 
 export function ToExp() {
   var to = document.getElementById("experience");
