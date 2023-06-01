@@ -8,17 +8,9 @@ const Footer = () => {
     <div className={FooterStyles.footer}>
       <hr />
       <div className={FooterStyles.container}>
-        {/* <div className="firsttext">
-          <h2>Call</h2>
-          <p>+852 59432006</p>
-        </div>
-        <div className="secondtext">
-          <h2>Email</h2>
-          <p>chriswong0621@gmail.com</p>
-        </div> */}
         <div className="firsttext">
           <h2>Contact</h2>
-          <p>Please feel free to contact me through Whatsapp/Linkedin!</p>
+          <p>Feel free to contact me through Whatsapp/Linkedin!</p>
         </div>
       </div>
       <div className={FooterStyles.secondcontainer}>

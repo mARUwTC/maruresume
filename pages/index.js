@@ -1,4 +1,4 @@
-import BackgroundAnimation from "../components/Background";
+import BackgroundAnimation from "../components/BGindex";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
