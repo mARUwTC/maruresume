@@ -1,7 +1,5 @@
 import React from "react";
-
 import { motion } from "framer-motion";
-
 
 import ContactStyles from "../styles/contact.module.css";
 
