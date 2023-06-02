@@ -11,7 +11,7 @@ const About = () => {
     {
       id: "1",
       numyear: "2019",
-      para: "Graduated and started working",
+      para: "Start my career journey",
     },
     {
       id: "2",
