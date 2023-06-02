@@ -33,7 +33,7 @@ const Nav = () => {
       </ul>
       <ul className={NavStyle.iconlinks}>
         <li>
-          <Link href="https://wa.me/85259432006" target="_blank"><i className="fab fa-whatsapp"></i></Link>
+          <Link href="mailto:chriswong.621@outlook.com"><i className="fa fa-envelope"></i></Link>
         </li>
         <li>
           <Link href="https://www.linkedin.com/in/chriswongtc" target="_blank"><i className="fab fa-linkedin"></i></Link>
