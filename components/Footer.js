@@ -10,14 +10,14 @@ const Footer = () => {
       <div className={FooterStyles.container}>
         <div className="firsttext">
           <h2>Contact</h2>
-          <p>Feel free to contact me through Whatsapp/Linkedin!</p>
+          <p>Feel free to contact me through Email/Linkedin!</p>
         </div>
       </div>
       <div className={FooterStyles.secondcontainer}>
         <p>Thanks for your time! :)</p>
         <ul>
         <li>
-          <Link href="https://wa.me/85259432006" target="_blank"><i className="fab fa-whatsapp"></i></Link>
+          <Link href="mailto:chriswong.621@outlook.com"><i className="fa fa-envelope"></i></Link>
         </li>
         <li>
           <Link href="https://www.linkedin.com/in/chriswongtc" target="_blank"><i className="fab fa-linkedin"></i></Link>
