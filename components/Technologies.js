@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
@@ -11,31 +11,31 @@ const Technologies = () => {
       id: "1",
       tech: "fas fa-network-wired",
       title: "Networking",
-      para: "Experience with Cisco, Jupiter, Sonicwall",
+      para: "TCP/IP, Cisco, Jupiter",
     },
     {
       id: "2",
       tech: "fas fa-user-secret	",
       title: "Security",
-      para: "Experience with FortiGate, MDATP",
+      para: "ISMS, CISSP, FortiGate, MDATP",
     },
     {
       id: "3",
       tech: "fas fa-server",
       title: "Infrastructure",
-      para: "Experience with Windows, Ubuntu, Linix-like systems",
+      para: "Microsoft, VMware, Unix-like OS",
     },
     {
       id: "4",
       tech: "fab fa-react",
       title: "Front-End",
-      para: "Experience with  React.js",
+      para: "React.js, Vue.js",
     },
     {
       id: "5",
       tech: "fab fa-node",
       title: "Back-End",
-      para: "Experience with Node and Databases",
+      para: "NodeJS, Different databases including SQL & NoSQL",
     },
   ]);
 

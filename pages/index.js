@@ -5,6 +5,7 @@ import React from "react";
 
 import HomeStyles from "../styles/home.module.css";
 import Technologies from "../components/Technologies";
+import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Experience from "../components/Exprience";
 import BackgroundAnimation from "../components/BGindex";
@@ -57,6 +58,7 @@ export default function Home() {
 
       <Experience />
       <Technologies />
+      <Projects />
       <Footer />
     </>
   );

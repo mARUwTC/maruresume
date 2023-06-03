@@ -1,103 +1,52 @@
-import ProjectStyles from "../styles/projects.module.css";
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
+import ProjectStyles from "../styles/projects.module.css";
 import Image from "next/image";
-import BackgroundAnimation from "./Background";
-import BackgroundAnimation2 from "./Background2";
+import Link from "next/link";
 
 const Projects = () => {
 
+  const [refTitle, inViewTitle] = useInView({
+    threshold: 0.5,
+    triggerOnce: true
+  });
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 50 }
+  };
   return (
     <div className={ProjectStyles.project}>
       <h1>Projects</h1>
-
-      <div className={ProjectStyles.cardgroup}>
+      <motion.div
+        className={ProjectStyles.cardgroup}
+        ref={refTitle}
+        initial="hidden"
+        animate={inViewTitle ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 0.5 }}
+      >
         <div className="card card1">
           <Image
-            src="/1.png"
+            src="/pro.png"
             alt="Picture of the author"
             width={500}
             height={300}
           />
-          <h1>MERN Memories</h1>
+          <h1>Dynamic Portfolio</h1>
           <hr />
           <p>
-            Using React, Node.js, Express & MongoDB you&apos;`ll learn how to build a
-            Full Stack MERN Application - from start to finish. The App is
-            called Memories and it is a simple social media app that allows
-            users to post interesting events that happened in their lives.
+            A dynamic profolio webpage using Next.js.
           </p>
 
           <div className={ProjectStyles.buttongroup}>
-            <button>Code</button>
-            <button>Source</button>
+            <button>
+              <Link href="https://github.com/mARUwTC/maruresume" target="_blank">Code</Link>
+            </button>
+            {/* <button>Source</button> */}
           </div>
         </div>
-        <div className="card card1">
-          <Image
-            src="/2.png"
-            alt="Picture of the author"
-            width={500}
-            height={300}
-          />
-          <h1>E Commerce</h1>
-          <hr />
-          <p>
-            Using React, Node.js, Express & MongoDB you&apos;`ll learn how to build a
-            Full Stack MERN Application - from start to finish. The App is
-            called Memories and it is a simple social media app that allows
-            users to post interesting events that happened in their lives.
-          </p>
-
-          <div className={ProjectStyles.buttongroup}>
-            <button>Code</button>
-            <button>Source</button>
-          </div>
-        </div>
-        <div className="card card1">
-          <Image
-            src="/3.jpg"
-            alt="Picture of the author"
-            width={500}
-            height={300}
-          />
-          <h1>WebRTC App</h1>
-          <hr />
-          <p>
-            Using React, Node.js, Express & MongoDB you&apos;`ll learn how to build a
-            Full Stack MERN Application - from start to finish. The App is
-            called Memories and it is a simple social media app that allows
-            users to post interesting events that happened in their lives.
-          </p>
-
-          <div className={ProjectStyles.buttongroup}>
-            <button>Code</button>
-            <button>Source</button>
-          </div>
-        </div>
-        <div className="card card1">
-          <Image
-            src="/4.jpg"
-            alt="Picture of the author"
-            width={500}
-            height={300}
-          />
-          <h1>Unichat</h1>
-          <hr />
-          <p>
-            Using React, Node.js, Express & MongoDB you&apos;`ll learn how to build a
-            Full Stack MERN Application - from start to finish. The App is
-            called Memories and it is a simple social media app that allows
-            users to post interesting events that happened in their lives.
-          </p>
-
-          <div className={ProjectStyles.buttongroup}>
-            <button>Code</button>
-            <button>Source</button>
-          </div>
-        </div>
-      </div>
-      <BackgroundAnimation />
-      <BackgroundAnimation2 />
+      </motion.div>
     </div>
   );
 };

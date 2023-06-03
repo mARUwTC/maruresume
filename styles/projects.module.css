@@ -41,7 +41,7 @@
 .cardgroup > div h1 {
   pointer-events: none;
   font-weight: 500;
-  font-size: 2.7rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -59,8 +59,8 @@
   max-width: 100%;
   width: 380px;
   margin: 0 auto;
-
   line-height: 2;
+  text-align: center;
 }
 
 .cardgroup > div > ul {
@@ -70,10 +70,6 @@
   margin: 0 auto;
   line-height: 2;
 }
-
-/* .cardgroup > h3 {
-    margin-left: 7rem;
-} */
 
 .h3 {
   text-align: center;
@@ -86,21 +82,22 @@
   width: 80%;
   margin: 1rem auto;
   justify-content: space-between;
+  column-gap: 1rem;
 }
 
 .buttongroup {
   width: 80%;
-  margin: 3rem auto;
+  margin: 1rem auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttongroup button {
   width: 100px;
   height: 40px;
   border-radius: 45px;
-  /* background: hsl(219, 41%, 30%); */
-  background: transparent;
+  background: hsl(219, 38%, 28%);;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   color: white;
   font-weight: 500;

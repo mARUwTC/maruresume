@@ -23,6 +23,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-block: 3rem;
+  column-gap: 1rem;
 }
 
 .techgroup > div {
