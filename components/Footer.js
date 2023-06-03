@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={FooterStyles.container}>
         <div className="firsttext">
           <h2>Contact</h2>
-          <p>Feel free to contact me through Email/Linkedin!</p>
+          <p>Feel free to contact me through Email/LinkedIn!</p>
         </div>
       </div>
       <div className={FooterStyles.secondcontainer}>
