@@ -13,23 +13,23 @@ const logIp = async (req) => {
   const ip = req.headers['x-real-ip'] || req.socket.remoteAddress;
 
   const data = {
-      timestamp: new Date().toISOString(),
-      ip: ip
+    timestamp: new Date().toISOString(),
+    ip: ip
   };
 
   try {
-      await client.connect();
-      const database = client.db('<database>');
-      const collection = database.collection('ips');
-      await collection.insertOne(data);
+    await client.connect();
+    const database = client.db('getIP');
+    const collection = database.collection('ips');
+    await collection.insertOne(data);
   } catch (err) {
-      console.error(err);
+    console.error(err);
   } finally {
-      await client.close();
+    await client.close();
   }
 };
 
-const MyApp = ({ Component, pageProps, router }) =>{
+const MyApp = ({ Component, pageProps, router }) => {
   return (
     <Layout>
       <AnimatePresence mode='wait'>
