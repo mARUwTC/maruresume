@@ -3,8 +3,14 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import NavStyle from "../styles/nav.module.css";
+import { useShowDiv } from "../functions/queryParam";
 
-const Nav = () => {
+export function ToCV() {
+  window.open("https://bit.ly/3WM41dy", '_blank').focus();
+}
+
+function Nav() {
+  const showDiv = useShowDiv();
   return (
     <nav className={NavStyle.nav}>
       <Link href="/">
@@ -23,7 +29,7 @@ const Nav = () => {
           </motion.span>
         </motion.h1>
       </Link>
-      <ul>
+      <ul className={NavStyle.centerNav}>
         <li>
           <Link href="/">Home</Link>
         </li>
@@ -42,7 +48,7 @@ const Nav = () => {
           <Link href="https://github.com/mARUwTC/maruresume" target="_blank"><i className="fab fa-github"></i></Link>
         </li>
         <div className={NavStyle.buttongroup}>
-          <Link href="https://bit.ly/3WM41dy" target="_blank"><button>Résumé</button></Link>
+          <button onClick={ToCV}>Résumé</button>
         </div>
       </ul>
     </nav>

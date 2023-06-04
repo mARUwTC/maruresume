@@ -16,12 +16,6 @@ const Footer = () => {
       </div>
       <div className={FooterStyles.secondcontainer}>
         <p>Thanks for your time! :)</p>
-        <Image
-          src="/thankyou.webp"
-          width={100}
-          height={100}
-        >
-        </Image>
         <ul>
           <li>
             <Link href="mailto:chriswong.621@outlook.com"><i className="fa fa-envelope"></i></Link>
