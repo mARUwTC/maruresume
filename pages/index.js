@@ -58,7 +58,7 @@ export default function Home() {
 
       <Experience />
       <Technologies />
-      <Projects />
+      {/* <Projects /> */}
       <Footer />
     </>
   );
