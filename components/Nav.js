@@ -10,7 +10,7 @@ export function ToCV() {
 }
 
 function Nav() {
-  const showDiv = useShowDiv();
+  // const showDiv = useShowDiv();
   return (
     <nav className={NavStyle.nav}>
       <Link href="/">
