@@ -51,7 +51,7 @@ export default function Home() {
           </motion.p>
         </div>
         <div className={HomeStyles.more} onClick={ToExp}>
-          <FontAwesomeIcon icon={faChevronDown} />
+          <FontAwesomeIcon icon={faChevronDown} lazyOnload />
         </div>
         <BackgroundAnimation />
       </motion.div>
