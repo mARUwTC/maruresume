@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Projects = () => {
-
   const [refTitle, inViewTitle] = useInView({
     threshold: 0.5,
     triggerOnce: true

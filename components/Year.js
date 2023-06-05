@@ -6,8 +6,6 @@ const Year = (props) => {
     <div>
       <span>{props.title}</span>
       <Image src="/year.svg" width={150} height={4} alt="year"></Image>
-
-     
       <p>{props.para}</p>
     </div>
   );
