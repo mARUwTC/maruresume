@@ -9,7 +9,7 @@ import { useShowCV } from "../functions/queryParam";
 const MyApp = ({ Component, pageProps, router }) => {
   const showCV = useShowCV();
   const [showPopup, setShowPopup] = useState(false);
-  const [showComponent, setShowComponent] = useState(false);
+  const [showComponent, setShowPage] = useState(false);
 
   useEffect(() => {
     if (!showCV) {
@@ -17,20 +17,20 @@ const MyApp = ({ Component, pageProps, router }) => {
       if (!visited) {
         localStorage.setItem('visited', 'true');
         setShowPopup(true);
-        setShowComponent(false);
+        setShowPage(false);
       } else {
         setShowPopup(false);
-        setShowComponent(true);
+        setShowPage(true);
       }
     } else {
       setShowPopup(false);
-      setShowComponent(true);
+      setShowPage(true);
     }
   }, [showCV, router.asPath]);
 
-  const handleButtonClick = () => {
+  const closeButton = () => {
     setShowPopup(false);
-    setShowComponent(true);
+    setShowPage(true);
   };
 
   const popupVariants = {
@@ -54,7 +54,7 @@ const MyApp = ({ Component, pageProps, router }) => {
         >
           <h2>Welcome to my profolio!</h2>
           <p>This is a guest page. Please contact me for more details about the full version of this website including CV.</p>
-          <motion.button onClick={handleButtonClick} whileTap={{ scale: 0.8 }} >Explore less</motion.button>
+          <motion.button onClick={closeButton} whileTap={{ scale: 0.8 }} >Explore less</motion.button>
         </motion.div>
       )}
       {showComponent &&
