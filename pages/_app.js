@@ -3,20 +3,10 @@ import { AnimatePresence } from "framer-motion";
 
 import "../styles/globals.css";
 import Layout from "../components/Layout";
-import GuestAlert from '../components/guestAlert';
 import { useShowCV } from "../functions/queryParam";
 
 const MyApp = ({ Component, pageProps, router }) => {
   const showCV = useShowCV();
-
-  // const [showModal, setShowModal] = useState(false);
-  // useEffect(() => {
-  //   const visited = localStorage.getItem('visited');
-  //   if (!visited) {
-  //     localStorage.setItem('visited', 'true');
-  //     setShowModal(true);
-  //   }
-  // }, []);
 
   useEffect(() => {
     if (!showCV) {
@@ -37,7 +27,6 @@ const MyApp = ({ Component, pageProps, router }) => {
 
   return (
     <Layout>
-      {/* <GuestAlert isOpen={showModal} onClose={() => setShowModal(false)} /> */}
       <AnimatePresence mode='wait'>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
