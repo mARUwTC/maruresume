@@ -54,7 +54,7 @@ const MyApp = ({ Component, pageProps, router }) => {
         >
           <h2>Welcome to my profolio!</h2>
           <p>This is a guest page. Please contact me for more details about the full version of this website including CV.</p>
-          <motion.button onClick={closeButton} whileTap={{ scale: 0.8 }} >Explore less</motion.button>
+          <motion.button onClick={closeButton} whileTap={{ scale: 0.8 }} >Explore</motion.button>
         </motion.div>
       )}
       {showComponent &&
