@@ -57,7 +57,7 @@ const About = () => {
         <h1>About Me</h1>
         <div className={AboutStyles.text}>
           <p>
-            With 3 years of experience in the information technology field, I have developed expertise in system security management, networking, and system management. Additionally, I have honed my skills in IT project management and implementation.
+            With 4 years of experience in the information technology field, I have developed expertise in system security management, networking, and system management. Additionally, I have honed my skills in IT project management and implementation.
           </p>
           <div className={AboutStyles.yearslist}>
             {year.map((y) => {

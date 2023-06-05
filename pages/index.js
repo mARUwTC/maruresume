@@ -47,7 +47,7 @@ export default function Home() {
             initial={{ scale: 0, opacity: 0 }}
             style={{ textAlign: "justify" }}
           >
-            Hello, I&apos;m Chris Wong, a System Engineer with three years of experience. I enjoy tackling complex problems and am dedicated to delivering high-quality work.
+            Hello, I&apos;m Chris Wong, a System Engineer with four years of experience. I enjoy tackling complex problems and am dedicated to delivering high-quality work.
           </motion.p>
         </div>
         {showMobile && (
