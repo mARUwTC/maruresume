@@ -55,3 +55,47 @@ ol {
 img {
   max-width: 100%;
 }
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  background-color: rgb(30, 45, 72);
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: fit-content;
+}
+
+.popup h2 {
+  text-align: center;
+}
+
+.popup p {
+  margin: 20px auto;
+  text-align: justify;
+}
+
+.popup button {
+  background-color: rgb(23, 28, 37);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+.popup button:hover {
+  background-color: #27365e;
+  transform: translateY(-2px);
+}
+
+.popup button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #27365e;
+}
