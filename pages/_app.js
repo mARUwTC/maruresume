@@ -45,7 +45,7 @@ const MyApp = ({ Component, pageProps, router }) => {
     <Layout>
       {showPopup && (
         <motion.div
-          className='popup'
+          className='guestpopup'
           variants={popupVariants}
           initial='hidden'
           animate='visible'
