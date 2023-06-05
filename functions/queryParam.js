@@ -9,11 +9,8 @@ export const useShowCV = () => {
         const searchParams = new URLSearchParams(router.asPath.split('?')[1]);
         const paramValue = searchParams.get('CV');
 
-        if (!paramValue || paramValue === 'false') {
-            setShowCV(false);
-        } else {
-            setShowCV(true);
-        }
+        setShowCV(paramValue && paramValue !== 'false');
+        
     }, [router.asPath]);
 
     return showCV;

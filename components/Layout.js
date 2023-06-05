@@ -12,11 +12,7 @@ const Layout = ({ children }) => {
   const showMobile = useShowMobile();
 
   const scrolling = () => {
-    if (!showScroll && window.scrollY > 300) {
-      setShowScroll(true);
-    } else if (showScroll && window.scrollY < 300) {
-      setShowScroll(false);
-    }
+    setShowScroll(window.scrollY > 300 && !showScroll ? true : window.scrollY < 300 && showScroll ? false : showScroll);
   };
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
