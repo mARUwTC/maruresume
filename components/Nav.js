@@ -3,18 +3,18 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import NavStyle from "../styles/nav.module.css";
-import { useShowDiv } from "../functions/queryParam";
+import { useShowCV } from "../functions/queryParam";
 
 export function ToCV() {
   window.open("https://bit.ly/3WM41dy", '_blank').focus();
 }
 
 function Nav() {
-  // const showDiv = useShowDiv();
+  const showCV = useShowCV();
   return (
     <nav className={NavStyle.nav}>
       <Link href="/">
-        <motion.h1 drag>
+        <motion.h1 drag className={showCV ? NavStyle.withCV : ''}>
           <motion.span
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
@@ -44,12 +44,18 @@ function Nav() {
         <li>
           <Link href="https://www.linkedin.com/in/chriswongtc" target="_blank"><i className="fab fa-linkedin"></i></Link>
         </li>
-        <li>
-          <Link href="https://github.com/mARUwTC/maruresume" target="_blank"><i className="fab fa-github"></i></Link>
-        </li>
-        <div className={NavStyle.buttongroup}>
-          <button onClick={ToCV}>Résumé</button>
-        </div>
+        {showCV && (
+          <>
+            <li>
+              <Link href="https://github.com/mARUwTC/maruresume" target="_blank">
+                <i className="fab fa-github"></i>
+              </Link>
+            </li>
+            <div className={NavStyle.buttongroup}>
+              <button onClick={ToCV}>Résumé</button>
+            </div>
+          </>
+        )}
       </ul>
     </nav>
   );

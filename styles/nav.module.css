@@ -48,7 +48,11 @@
   letter-spacing: 4px;
   cursor: pointer;
   z-index: 8;
-  width: 318px;
+  width: 124px;
+}
+
+.withCV {
+  width: 318px !important;
 }
 
 .nav ul {

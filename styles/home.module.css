@@ -25,6 +25,13 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 966px) {
+  .home {
+    padding-top: 0rem !important;
+    margin-top: 0.5rem !important;
+  }
+}
+
 .more {
   width: 3%;
   transition: all 0.3s ease 0s;

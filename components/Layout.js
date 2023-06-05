@@ -3,9 +3,13 @@ import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Head from "next/head";
 import LayoutStyle from "../styles/layout.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { useShowMobile } from "../functions/isMobile"
 
 const Layout = ({ children }) => {
   const [showScroll, setShowScroll] = useState(false);
+  const showMobile = useShowMobile();
 
   const scrolling = () => {
     if (!showScroll && window.scrollY > 300) {
@@ -59,13 +63,15 @@ const Layout = ({ children }) => {
         <hr className={LayoutStyle.hr} />
         <main className={LayoutStyle.main}>
           {children}
-          <div
-            className={LayoutStyle.scroll}
-            onClick={scrollTop}
-            style={{ right: showScroll ? "3%" : "-30%" }}
-          >
-            <i className="fas fa-arrow-circle-up"></i>
-          </div>
+          {showMobile && (
+            <div
+              className={LayoutStyle.scroll}
+              onClick={scrollTop}
+              style={{ right: showScroll ? "5%" : "-30%" }}
+            >
+              <FontAwesomeIcon icon={faAngleUp} size={10} />
+            </div>
+          )}
         </main>
       </div>
     </>

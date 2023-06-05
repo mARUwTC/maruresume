@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
+import { useShowCV } from "../functions/queryParam";
 import FooterStyles from "../styles/footer.module.css";
 
 const Footer = () => {
+  const showCV = useShowCV();
   return (
     <div className={FooterStyles.footer}>
       <hr />
@@ -23,9 +24,11 @@ const Footer = () => {
           <li>
             <Link href="https://www.linkedin.com/in/chriswongtc" target="_blank"><i className="fab fa-linkedin"></i></Link>
           </li>
-          <li>
-            <Link href="https://github.com/mARUwTC/maruresume" target="_blank"><i className="fab fa-github"></i></Link>
-          </li>
+          {showCV && (
+            <li>
+              <Link href="https://github.com/mARUwTC/maruresume" target="_blank"><i className="fab fa-github"></i></Link>
+            </li>
+          )}
         </ul>
       </div>
     </div >

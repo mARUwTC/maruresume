@@ -42,9 +42,28 @@ const Projects = () => {
             <button>
               <Link href="https://github.com/mARUwTC/maruresume" target="_blank">Code</Link>
             </button>
-            {/* <button>Source</button> */}
           </div>
         </div>
+        {/* <div className="card card1">
+          <Image
+            src="/pro.png"
+            alt="Picture of the author"
+            width={500}
+            height={300}
+          />
+          <h1>Dynamic Portfolio</h1>
+          <hr />
+          <p>
+            A dynamic profolio webpage using Next.js.
+          </p>
+
+          <div className={ProjectStyles.buttongroup}>
+            <button>
+              <Link href="https://github.com/mARUwTC/maruresume" target="_blank">Code</Link>
+            </button>
+            <button>Source</button>
+          </div>
+        </div> */}
       </motion.div>
     </div>
   );

@@ -8,15 +8,15 @@ import { faBriefcase, faSchool, faStar } from '@fortawesome/free-solid-svg-icons
 import ExpStyles from "../styles/experience.module.css";
 
 const workIcon = {
-    icon: <FontAwesomeIcon icon={faBriefcase} lazyOnload />,
+    icon: <FontAwesomeIcon icon={faBriefcase} />,
     iconStyle: { background: 'rgb(30, 45, 72)', color: '#fff' }
 };
 const schoolIcon = {
-    icon: <FontAwesomeIcon icon={faSchool} lazyOnload />,
+    icon: <FontAwesomeIcon icon={faSchool} />,
     iconStyle: { background: 'rgb(87, 20, 43)', color: '#fff' }
 };
 const starIcon = {
-    icon: <FontAwesomeIcon icon={faStar} lazyOnload />,
+    icon: <FontAwesomeIcon icon={faStar} />,
     iconStyle: { background: 'rgb(35, 122, 86)', color: '#fff' }
 };
 
