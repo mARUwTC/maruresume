@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import HomeStyles from "../styles/home.module.css";
 import Technologies from "../components/Technologies";
@@ -16,6 +16,14 @@ export function ToExp() {
 }
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth > 768);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <motion.div
@@ -50,9 +58,9 @@ export default function Home() {
             Hello, I&apos;m Chris Wong, a System Engineer with three years of experience. I enjoy tackling complex problems and am dedicated to delivering high-quality work.
           </motion.p>
         </div>
-        <div className={HomeStyles.more} onClick={ToExp}>
+        {isMobile && (<div className={HomeStyles.more} onClick={ToExp}>
           <FontAwesomeIcon icon={faChevronDown} lazyOnload />
-        </div>
+        </div>)}
         <BackgroundAnimation />
       </motion.div>
 
