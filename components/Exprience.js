@@ -22,7 +22,7 @@ const starIcon = {
 
 function Experience() {
     const timeline = [
-        { icon: workIcon, date: '', title: 'Atos - Security Analyst', desc: 'Splunk, PatchLink, Password Manager Pro, McAfee/Symantec and Nessus' },
+        // { icon: workIcon, date: 'JUL 2023 - Current', title: 'Atos - Security Analyst', desc: 'Splunk, PatchLink, Password Manager Pro, McAfee/Symantec and Nessus' },
         { icon: workIcon, date: 'MAR 2022 - JUL 2023', title: 'NEC Hong Kong Ltd - System Engineer', desc: 'Networking - Cisco, H3C\nSecurity management - FortiGate\nInfrastructure - VMware, AWS' },
         { icon: workIcon, date: 'DEV 2020 - JAN 2022', title: 'TAS Service Ltd - IT Support Officer', desc: 'One-man band IT officer including System management, User support' },
         { icon: workIcon, date: 'SEP 2019 - MAY 2020', title: 'HKT - Engineer', desc: 'IT Project (Windows Migration)' },
