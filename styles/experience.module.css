@@ -1,4 +1,31 @@
-.experience > h1 {
+@media (min-width: 1170px) {
+    .card {
+        transition: transform 0.2s ease-out;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.experience h1 {
     margin-block: 2.5rem;
     font-size: clamp(2.5rem, 5vw, 3.8rem);
+}
+
+.experience hr {
+    margin: 10px 0px;
+    align-items: left;
+    border: none;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.noshow {
+    display: none;
+}
+
+.desc {
+    margin-top: 0px !important;
 }
